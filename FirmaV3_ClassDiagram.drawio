@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="rcUHlj1lV0WHpPZUBOzG" name="Page-1">
-        <mxGraphModel dx="527" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="559" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="&lt;&lt; Mitarbeiter &gt;&gt;&#10;Abstract " style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="405" y="406" width="290" height="394" as="geometry"/>
+                    <mxGeometry x="405" y="406" width="290" height="368" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="- id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="40" width="290" height="26" as="geometry"/>
@@ -43,18 +43,15 @@
                 <mxCell id="13" value="+ static ausgabe(Mitarbeiter[]): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="290" width="290" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="+ static getAnzAngestellteGesamt(Mitarbeiter[]): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                <mxCell id="14" value="+ static getAnzAngestellterGesamt(Mitarbeiter[]): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="316" width="290" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="+ static getAnzArbeiterGesamt(Mitarbeiter[]): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="342" width="290" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="+ static getAnzMitarbeiterGesamt(Mitarbeiter[]): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
-                    <mxGeometry y="368" width="290" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.275;entryY=0.973;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="17" target="16" edge="1">
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.277;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="17" target="15" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="485" y="766" as="targetPoint"/>
+                        <mxPoint x="484.75" y="799.298" as="targetPoint"/>
                         <Array as="points">
                             <mxPoint x="405" y="850"/>
                             <mxPoint x="485" y="850"/>
@@ -103,9 +100,9 @@
                 <mxCell id="20" value="+ ausgabe(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17" vertex="1">
                     <mxGeometry y="302" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.678;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="30" target="16" edge="1">
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.673;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="30" target="15" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="602" y="756" as="targetPoint"/>
+                        <mxPoint x="601.6200000000001" y="799.7139999999999" as="targetPoint"/>
                         <Array as="points">
                             <mxPoint x="715" y="850"/>
                             <mxPoint x="602" y="850"/>
@@ -253,6 +250,9 @@
                 </mxCell>
                 <mxCell id="89" value="+ searchAbteilung(int id): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="67">
                     <mxGeometry y="432" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" style="edgeStyle=none;html=1;entryX=-0.001;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="68" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
